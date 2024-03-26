@@ -26,4 +26,6 @@ let milesToMars = distanceToMars * milesPerKm;
 let hoursToMars = milesToMars / shuttleSpeedMph; 
 let daysToMars = hoursToMars / 24;
 
-console.log(shuttleName , "will take" , daysToMars , "days to reach The Moon")
+console.log(shuttleName , "will take" , daysToMars , "days to reach The Moon");
+
+ 
