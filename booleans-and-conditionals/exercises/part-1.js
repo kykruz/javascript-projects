@@ -70,10 +70,10 @@ engineIndicatorLight = "!red blinking";
    console.log("Fuel and enging status pending...");
  }
 
-let commandOveride = "true" || "false"
+let commandOveride = true || false
 
  
- if (fuelLevel > 20000 && engineIndicatorLight === "!redblinking" || commandOveride === "true") {
+ if (fuelLevel > 20000 && engineIndicatorLight === "!redblinking" || commandOveride === true) {
    console.log("Cleared to launch!");
  } else {
    console.log("Launch scrubbed!");
