@@ -52,16 +52,31 @@ if (!crewStatus || computerStatusCode !== 200 || !spaceSuitsOn) {
    console.log("all systems go");
 }
 
-if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight === "red blinking"){
-   console.log("ENGINE FAILURE IMMINENT!");
- } else if (fuelLevel <= 5000 || engineTemperature > 2500){
-   console.log("Check fuel level. Engines running hot.");
- } else if (fuelLevel > 20000 && engineTemperature <= 2500){
-   console.log("Full tank. Engines good.");
- } else if (fuelLevel > 10000 && engineTemperature <= 2500){
-   console.log("Fuel level above 50%. Engines good.");
- } else if (fuelLevel > 5000 && engineTemperature <= 2500){
-   console.log("Fuel level above 25%. Engines good.");
+let fuelLevel = 21000;
+let engineTemperature = 1200;
+engineIndicatorLight = "!red blinking";
+
+ if (fuelLevel <1000 || engineTemperature >3500 || engineIndicatorLight === "red blinking") {
+   console.log("Engine Failure Imminent!");
+ } else if (fuelLevel < 5000 || engineTemperature > 2500) {
+   console.log("Check fuel levels. Engines running hot");
+ } else if (fuelLevel > 20000 && engineTemperature <= 2500) {
+   console.log("Full Tank. Engines good.");
+ } else if (fuelLevel > 10000 && engineTemperature <= 2500) {
+   console.log("Fuels levels above 50%. Engines good.");
+ } else if (fuelLevel > 5000 && engineTemperature <= 2500) {
+   console.log("Fuel levels above 25%. Engines good.");
  } else {
-   console.log("Fuel and engine status pending...");
+   console.log("Fuel and enging status pending...");
  }
+
+let commandOveride = "true" || "false"
+
+ 
+ if (fuelLevel > 20000 && engineIndicatorLight === "!redblinking" || commandOveride === "true") {
+   console.log("Cleared to launch!");
+ } else {
+   console.log("Launch scrubbed!");
+}
+
+ 
