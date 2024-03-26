@@ -8,5 +8,23 @@
    to have
    multi-line
    comments. */
+  
+   // I am making a comment.
 
-   console.log("Comments make your code more readable by others.");
+   /* I am making
+   a multi-line
+   comment*/ 
+   
+
+
+
+   console.log("Comments make your code more readable by others")
+   console.log(String(17))
+   console.log(String(17))
+   console.log(Number('3 3'))
+
+   const input = require('readline-sync');
+
+   let name = input.question("Enter your name: ");
+
+   console.log("Hello, " + name + "!");
