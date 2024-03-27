@@ -23,15 +23,17 @@ if (astronautCount <= 7 && astronautStatus === "ready" && totalMassKg < maximumM
     console.log("Shuttle not ready for launch!");
  }
 
+console.log("--------------------------------------------")
 console.log("Date:",date);
 console.log("Time:",time);
 console.log("Astronaut Count:",astronautCount);
-console.log("Crew Mass:",crewMassKg);
-console.log("Fuel Mass:",fuelMassKg);
-console.log("Shuttle Mass:",shuttleMassKg);
-console.log("Total Mass:", totalMassKg);
-console.log("Fuel Temperature:",fuelTempCelsius);
+console.log("Crew Mass:",crewMassKg, "Kg");
+console.log("Fuel Mass:",fuelMassKg, "Kg");
+console.log("Shuttle Mass:",shuttleMassKg, "Kg");
+console.log("Total Mass:", totalMassKg, "Kg");
+console.log("Fuel Temperature:",fuelTempCelsius,"°C");
 console.log("Weather Status:",weatherStatus);
+console.log("-------------------------------------------")
 console.log("Have a safe trip astronauts!");
 
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
