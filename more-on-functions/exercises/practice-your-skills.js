@@ -12,4 +12,16 @@ b) Replace any strings with “ARRR!”
 c) Print the new array to confirm your work.
 */
 
-let arr = ['Elocution', 21, 'Clean teeth', 100];
+let pracArray = ['Elocution', 21, 'Clean teeth', 100]
+let anonFunction = pracArray.map(function(myArg) {
+   if (typeof myArg === "number") {
+      return myArg * 3;
+   } else if (typeof myArg === "string") {
+      return "ARRRRR!";
+   } else {
+      return myArg;
+   }
+});
+
+
+console.log(anonFunction);
